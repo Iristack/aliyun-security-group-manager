@@ -1,0 +1,29 @@
+plugins:
+  ipv4:
+    - DigFromMyIpOpenDns
+    - SocketTrick
+
+interval: 10
+
+aliyun:
+  ak:
+  sk:
+
+securityGroup:
+  - id: sg-xxx
+    region: cn-hangzhou
+    ingress:
+      allow:
+        - proto: tcp
+          port: 22
+        - proto: tcp
+          port: 23
+        - proto: udp
+          port: 24
+      drop:
+        - proto: tcp
+          port: 22
+        - proto: tcp
+          port: 24
+        - proto: udp
+          port: 23
