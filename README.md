@@ -1,4 +1,5 @@
 # Security Group Manager
+#### [简体中文](/README_zh.md) | English
 
 A lightweight daemon that monitors your host's public IPv4 address and automatically
 synchronizes Aliyun ECS security group rules whenever the address changes.
